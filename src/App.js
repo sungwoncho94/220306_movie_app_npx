@@ -8,7 +8,7 @@ import styles from "./App.module.css";
 function App() {
   return (
     <div>
-      <h1 className={styles.btn}>Hello, World!</h1>
+      <h1 className={styles.btn}>Name.module.css 를 사용해서 css를 모듈로 적용시키자</h1>
       <Button text={"hi"}/>
     </div>
   );
