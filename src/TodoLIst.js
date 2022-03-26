@@ -29,6 +29,12 @@ function TodoList(){
         <input value={todo} placeholder="할 일을 입력해주세요." onChange={onChange} />
         <button>입력</button>
       </form>
+      <hr />
+      <ul>
+      {todoList.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+      </ul>
     </div>
   );
 }
