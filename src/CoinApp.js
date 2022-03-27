@@ -19,11 +19,11 @@ function CoinApp() {
 
     // 챌린지 : 선택한 코인을 비트코인 단위로 환산해보자
     // 선택된 코인의 가격
-    const [slctPrice, setSlctPrice] = useState(0);
+    const [slctPrice, setSlctPrice] = useState(1);
     // 선택된 코인 이름
     const [slctCoin, setSlctCoin] = useState('');
     // 비트코인 가격
-    const [bitPrice, setBitPrice] = useState('');
+    const [bitPrice, setBitPrice] = useState(1);
     
     function sltCoin(){
         // 선택한 코인 idx 뽑음
@@ -35,7 +35,7 @@ function CoinApp() {
         setSlctCoin(slctCoin);
         setBitPrice(coins[0].quotes.USD.price);
     }
-
+    
     return(
         <div>
             {loading ? <h1>비트코인과 비교해보기</h1> : ''}
